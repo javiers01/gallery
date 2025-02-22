@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavierS Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="top-menu">
+            <div class="logo">JavierSMaza</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="animatics.html">Animatics</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="bio.html">Bio</a></li>
+                <li><a
+                        href="mailto:your-email@example.com?subject=I%20would%20like%20to%20contact%20you%20from%20site">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="index-content">
+            <h1>Welcome to My Creative World</h1>
+            <h2>Exploring Art & Animation</h2>
+            <p>Dive into a portfolio that showcases a blend of traditional artistry and cutting-edge digital techniques.
+                Experience the magic of storytelling through visuals.</p>
+        </div>
+
+        <div class="background-slideshow">
+            <img src="media/index/01.png" alt="A vibrant digital illustration of a fantastical landscape" class="active"
+                width="1920" height="1080">
+            <img src="media/index/02.png" alt="An atmospheric oil painting of a misty forest" width="1920"
+                height="1080">
+            <img src="media/index/03.png" alt="A dynamic 3D rendered scene of futuristic city" width="1920"
+                height="1080">
+            <img src="media/index/04.png" alt="A whimsical character design sketch" width="1920" height="1080">
+        </div>
+        <footer>
+            <p>All material is copyrighted &copy; 2025</p>
+        </footer>
+        <script>
+            const images = document.querySelectorAll('.background-slideshow img');
+            let currentImage = 0;
+
+            function nextImage() {
+                images[currentImage].classList.remove('active');
+                currentImage = (currentImage + 1) % images.length;
+                images[currentImage].classList.add('active');
+            }
+
+            setInterval(nextImage, 5000); // Change image every 5 seconds
+        </script>
+</body>
+
+</html>
