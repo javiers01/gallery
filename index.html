@@ -7,7 +7,6 @@
     <title>JavierS Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="media/favicon.ico">
-    <script src="script.js"></script>
 </head>
 
 <body>
@@ -43,10 +42,16 @@
                 height="1080">
             <img src="media/index/04.png" alt="A whimsical character design sketch" width="1920" height="1080">
         </div>
-        <footer>
-            <p>All material is copyrighted &copy; 2025</p>
-        </footer>
-        <script>
+    </main>
+
+    <footer>
+        <p>All material is copyrighted &copy; 2025</p>
+    </footer>
+
+    <!-- JavaScript placed before closing body tag -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Background Slideshow Logic
             const images = document.querySelectorAll('.background-slideshow img');
             let currentImage = 0;
 
@@ -57,7 +62,23 @@
             }
 
             setInterval(nextImage, 5000); // Change image every 5 seconds
-        </script>
-</body>
 
+            // Mobile Menu Toggle
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navLinks = document.querySelector(".nav-links");
+
+            menuToggle.addEventListener("click", function() {
+                navLinks.classList.toggle("nav-active");
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener("click", function(event) {
+                if (!menuToggle.contains(event.target) && !navLinks.contains(event.target)) {
+                    navLinks.classList.remove("nav-active");
+                }
+            });
+        });
+    </script>
+
+</body>
 </html>
