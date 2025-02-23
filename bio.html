@@ -7,21 +7,19 @@
     <title>Bio - My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="media/favicon.ico">
-
 </head>
 
 <body>
     <header>
         <nav class="top-menu">
             <div class="logo">JavierSMaza</div>
-            <ul>
+            <div class="burger-menu" onclick="toggleMenu()">&#9776;</div>
+            <ul id="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="animatics.html">Animatics</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="bio.html">Bio</a></li>
-                <li><a
-                        href="mailto:your-email@example.com?subject=I%20would%20like%20to%20contact%20you%20from%20site">Contact</a>
-                </li>
+                <li><a href="mailto:javiersmaza@hotmail.com?subject=I%20would%20like%20to%20contact%20you%20from%20site">Contact</a></li>            </ul>
             </ul>
         </nav>
     </header>
@@ -32,7 +30,7 @@
             <div class="bio-container">
                 <img src="media/javiers.png" alt="picture JavierS" class="profile-picture" width="200" height="200">
                 <div class="bio-text">
-                    <p>JavierS Maza is a distinguished Executive Producer at Zinkvision, where he leads the production
+                    <p>JavierS Maza is an executive Producer at Zinkvision, where he leads the production
                         of high-quality animation for series, films, and Web3 projects. With a successful track record
                         deliver animation services for 200% Wolf, Blippi Wonders, Hot Wheels and Disney cruise
                         interactive.</p>
@@ -269,25 +267,18 @@
     </main>
 
     <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 My Portfolio. All Rights Reserved.
-                <span class="social-links">
-                    <a href="https://twitter.com/janedoe" target="_blank">
-                        <img src="images/twitter-icon.png" alt="Twitter" class="social-icon">
-                    </a>
-                    <a href="https://instagram.com/janedoe" target="_blank">
-                        <img src="images/instagram-icon.png" alt="Instagram" class="social-icon">
-                    </a>
-                    <a href="https://linkedin.com/in/janedoe" target="_blank">
-                        <img src="images/linkedin-icon.png" alt="LinkedIn" class="social-icon">
-                    </a>
-                    <a href="https://behance.net/janedoe" target="_blank">
-                        <img src="images/behance-icon.png" alt="Behance" class="social-icon">
-                    </a>
-                </span>
-            </p>
-        </div>
+        <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+        <span class="social-links">
+            <a href="https://www.linkedin.com/in/javiers-maza/" target="_blank">
+                <img src="media/linkedin.png" alt="Linkedin" class="social-icon" style="width: 24px; height: auto;">
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
 </body>
 
 </html>
