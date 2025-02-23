@@ -4,30 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery - My Portfolio</title>
+    <title>Gallery - JavierS Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="media/favicon.ico">
-
 </head>
 
 <body>
     <header>
         <nav class="top-menu">
             <div class="logo">JavierSMaza</div>
-            <ul>
+            <div class="burger-menu" onclick="toggleMenu()">&#9776;</div>
+            <ul id="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="animatics.html">Animatics</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="bio.html">Bio</a></li>
-                <li><a
-                        href="mailto:your-email@example.com?subject=I%20would%20like%20to%20contact%20you%20from%20site">Contact</a>
-                </li>
+                <li><a href="mailto:javiersmaza@hotmail.com?subject=I%20would%20like%20to%20contact%20you%20from%20site">Contact</a></li>            </ul>
             </ul>
         </nav>
     </header>
 
     <main>
-
         <div class="content">
             <h1>Gallery</h1>
 
@@ -228,12 +225,18 @@
                 </div>
             </div>
         </div>
-        <footer>
-            <p>All material is copyrighted &copy; 2024</p>
-        </footer>
+    </main>
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
+    <footer>
+        <p>All material is copyrighted &copy; 2025</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        }
+        document.addEventListener('DOMContentLoaded', function () {
                 const galleryImages = document.querySelectorAll('.gallery-image');
                 const body = document.body;
 
@@ -319,7 +322,7 @@
                     }
                 });
             });
-        </script>
+    </script>
 </body>
 
 </html>
