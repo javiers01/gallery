@@ -19,7 +19,7 @@
                 <li><a href="animatics.html">Animatics</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="bio.html">Bio</a></li>
-                <li><a href="mailto:javiersmaza@hotmail.com?subject=I%20would%20like%20to%20contact%20you%20from%20site">Contact</a></li>            </ul>
+                <li><a href="mailto:javiermazacontact@gmail.com?subject=I%20would%20like%20to%20contact%20you%20from%20site">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -28,21 +28,6 @@
         <div class="bio-content">
             <h1>About Me</h1>
                 <img src="media/javiers.png" alt="picture JavierS" class="profile-picture" width="200" height="200">
-<!--             <div class="bio-container">
-                <img src="media/javiers.png" alt="picture JavierS" class="profile-picture" width="200" height="200"> -->
-<!--                 <div class="bio-text">
-                    <p>JavierS Maza is an executive Producer at Zinkvision, where he leads the production
-                        of high-quality animation for series, films, and Web3 projects. With a successful track record
-                        deliver animation services for 200% Wolf, Blippi Wonders, Hot Wheels and Disney cruise
-                        interactive.</p>
-                    </br>
-                    <p>Previously, he collaborated with top studios like Warner Brothers, Sony, Nickelodeon Pictures,
-                        and some major brands such as Rio, Penguins of Madagascar, and Puss in Boots. His background in
-                        storytelling and as a top creative
-                        producer at a commercial houses, combined with his expertise in technology and business
-                        development, positions him as a leading force in animation innovation.
-                    </p>
-                </div> -->
                 <div class="skills-container">
                     <h2>Skills</h2>
                     <div class="skill-bar">
@@ -80,24 +65,6 @@
                 <div class="bio-text"></div>
                 <h2>Experience</h2>
                 <table width="100%">
-                    <!-- <tr>
-                        <td>
-                            <strong>3DOUBLE</strong>
-                            <p>"200% Wolf"</p>
-                        </td>
-                        <td align="right">
-                            <a href="https://www.flyingbark.com.au/">www.flyingbark.com.au</a>
-                        </td>
-                    </tr> -->
-                    <!-- <tr>
-                        <td>
-                            <strong>NETFLIX</strong>
-                            <p>"Hot Wheels Let's Race"</p>
-                        </td>
-                        <td align="right">
-                            <a href="https://www.netflix.com/es/title/81566729">www.netflix.com</a>
-                        </td>
-                    </tr> -->
                     <tr>
                         <td>
                             <strong>NETFLIX / GAUMONT </strong>
@@ -119,7 +86,7 @@
                     <tr>
                         <td>
                             <strong>DREAMWORKS TV</strong>
-                            <p>"Where’s Waldo?"</p>
+                            <p>"Where's Waldo?"</p>
                         </td>
                         <td align="right">
                             <a href="http://www.dreamworks.com">www.dreamworks.com</a>
@@ -128,7 +95,7 @@
                     <tr>
                         <td>
                             <strong>SONY PICTURES</strong>
-                            <p>"Smurfs, The Lost Vilalge", Marketing "Smurfs" & "Emoji" movies</p>
+                            <p>"Smurfs, The Lost Vilalge", Marketing "Smurfs" &amp; "Emoji" movies</p>
                         </td>
                         <td align="right">
                             <a href="http://www.imageworks.com">www.imageworks.com</a>
@@ -182,8 +149,7 @@
                     <tr>
                         <td>
                             <strong>XING XING</strong>
-                            <p>"The Hero of Color City
-                                "</p>
+                            <p>"The Hero of Color City"</p>
                         </td>
                         <td align="right">
                             <a href="http://www.xing-xing.com">www.xing-xing.com</a>
@@ -268,13 +234,17 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+        <p>All material is copyrighted &copy; <span id="footer-year"></span></p>
         <span class="social-links">
             <a href="https://www.linkedin.com/in/javiers-maza/" target="_blank">
                 <img src="media/linkedin.png" alt="Linkedin" class="social-icon" style="width: 24px; height: auto;">
+            </a>
+        </span>
     </footer>
 
     <script>
+        document.getElementById('footer-year').textContent = new Date().getFullYear();
+
         function toggleMenu() {
             const navLinks = document.getElementById('nav-links');
             navLinks.classList.toggle('active');

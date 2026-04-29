@@ -7,7 +7,6 @@
     <title>Contact - My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="media/favicon.ico">
-
 </head>
 
 <body>
@@ -19,9 +18,7 @@
                 <li><a href="animatics.html">Animatics</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="bio.html">Bio</a></li>
-                <li><a
-                        href="mailto:javiersecaduras@gmail.com?subject=I%20would%20like%20to%20contact%20you%20from%20site">Contact</a>
-                </li>
+                <li><a href="mailto:javiermazacontact@gmail.com?subject=I%20would%20like%20to%20contact%20you%20from%20site">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -50,22 +47,22 @@
                     <button type="submit">Send Message</button>
                 </form>
                 <div class="social-links">
-                    <a href="https://twitter.com/janedoe" class="social-icon" target="_blank"><i
-                            class="fab fa-twitter"></i></a>
-                    <a href="https://instagram.com/janedoe" class="social-icon" target="_blank"><i
-                            class="fab fa-instagram"></i></a>
-                    <a href="https://linkedin.com/in/janedoe" class="social-icon" target="_blank"><i
-                            class="fab fa-linkedin"></i></a>
-                    <a href="https://behance.net/janedoe" class="social-icon" target="_blank"><i
-                            class="fab fa-behance"></i></a>
+                    <a href="https://twitter.com/janedoe" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/janedoe" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com/in/janedoe" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://behance.net/janedoe" class="social-icon" target="_blank"><i class="fab fa-behance"></i></a>
                 </div>
             </div>
         </div>
     </main>
 
     <footer>
-        <p>All material is copyrighted &copy; 2024</p>
+        <p>All material is copyrighted &copy; <span id="footer-year"></span></p>
     </footer>
+
+    <script>
+        document.getElementById('footer-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
